@@ -1,4 +1,6 @@
-# We have tried to solve the consumer maximization problem by relying on existing code from the lectures and the exercise sets. 
+# Inaugural Project
+
+#We have tried to solve the consumer maximization problem by relying on existing code from the lectures and the exercise sets. 
 
 #For question 1 we have constructed a function that solves the maximization problem. The code is inspired by the third lecture on how to #optimize, print and plot. 
 

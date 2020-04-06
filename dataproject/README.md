@@ -1,14 +1,15 @@
 # Data analysis project
 
-Our project is titled **PROJECT TITLE** and is about EXPLAIN.
+Our project is titled Project 2 and is about income and employment.
 
-The **results** of the project can be seen from running [dataproject.ipynb](dataproject.ipynb).
+The **results** of the project can be seen from running Project2.ipynb (dataproject.ipynb).
 
 This **loades two datasets**:
 
-1. INDKP101.xlsx downloaded from statistikbanekn.dk/INDKP101
-1. RAS200.xlsx downloaded from statistikbanekn.dk/RAS200
+1. Income data from statistikbanekn.dk/INDKP107
+1. Employment data from statistikbanekn.dk/RAS200
 
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
-``pip install matplotlib-venn``
+1. `pip install pandas-datareader`
+1. `pip install git+https://github.com/elben10/pydst`

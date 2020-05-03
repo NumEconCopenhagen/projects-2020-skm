@@ -1,5 +1,3 @@
-
-
 import numpy as np
 import math
 from scipy import optimize
@@ -11,15 +9,15 @@ l_vec2 = np.empty(N2)
 t_vec = np.empty(N2)
 
 ## Spørgsmål 1
-def u_func(l, w, epsilon, m=1, nu=10, tau0=0.4, tau1=0.1, kappa=0.4):
+def u_func(l, w, epsilon, m, nu, tau0, tau1, kappa):
     return math.log10( m+w*l-(tau0*w*l+tau1*max(w*l-kappa,0)) ) - nu*l**(1+1/epsilon)/(1+1/epsilon)
 
 epsilon = 0.3
 w = 1 # arbitrary value for w, so problem can be solved
 
 # objective funciton (to minimize)
-def value_of_choice(l,w,epsilon):
-    return -u_func(l,w,epsilon)
+def value_of_choice(l,w,epsilon, m, nu, tau0, tau1, kappa):
+    return -u_func(l,w,epsilon, m, nu, tau0, tau1, kappa)
 
 # call solver
 sol_case1 = optimize.minimize_scalar(
@@ -39,7 +37,7 @@ l_vec = np.empty(N)
 c_vec = np.empty(N)
 
 # function to calculate consumption
-def c_func(l, w, epsilon, m=1, tau0=0.4, tau1=0.1, kappa=0.4):
+def c_func(l, w, epsilon, m, tau0, tau1, kappa):
     return m+w*l-(tau0*w*l+tau1*max(w*l-kappa,0)) 
 
 # calculates l and c for every value of w
@@ -68,6 +66,7 @@ def tax_rev(epsilon, m, nu, tau0, tau1, kappa):
         t_vec[i] = t_func(l,w,epsilon)
 
     return sum(t_vec)
+
 
 
     

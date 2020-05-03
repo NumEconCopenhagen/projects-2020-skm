@@ -52,18 +52,18 @@ for i,w in enumerate(w_vec):
 
 
 ## Spørgsmål 3
-def t_func(l, w, epsilon, m=1, tau0=0.4, tau1=0.1, kappa=0.4):
+def t_func(l, w, epsilon, m, nu, tau0, tau1, kappa):
     """ function for calculating taxes paid by each individual
 
     """
     return tau0*w*l+tau1*max(w*l-kappa,0)
 
 
-def tax_rev(epsilon):
+def tax_rev(epsilon, m, nu, tau0, tau1, kappa):
     for i,w in enumerate(w_vec2):
         w = w_vec2[i]
-        sol_case1 = optimize.minimize_scalar(value_of_choice,method='bounded',bounds=(0,1),args=(w, epsilon))
-        l_vec2[i] = sol_case1.x
+        find_l =sol_case1(sol_case1(w, epsilon, m, nu, tau0, tau1, kappa)
+        l_vec2[i] = find_l
         l=l_vec2[i]
         t_vec[i] = t_func(l,w,epsilon)
 

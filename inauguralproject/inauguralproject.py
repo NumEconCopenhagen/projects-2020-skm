@@ -63,7 +63,7 @@ def tax_rev(epsilon, m, nu, tau0, tau1, kappa):
         find_l =sol_case1(sol_case1(w, epsilon, m, nu, tau0, tau1, kappa))
         l_vec2[i] = find_l
         l=l_vec2[i]
-        t_vec[i] = t_func(l,w,epsilon)
+        t_vec[i] = t_func(l,w,epsilon, m, nu, tau0, tau1, kappa)
 
     return sum(t_vec)
 

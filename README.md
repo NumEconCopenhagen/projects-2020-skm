@@ -1,11 +1,23 @@
-# Inaugural Project
+# Project portfolio
 
-#We have tried to solve the consumer maximization problem by relying on existing code from the lectures and the exercise sets. 
+## Inaugural Project
+In this project we maximize the utility of..  and solve for the optimal tax rates of the politician.
 
-#For question 1 we have constructed a function that solves the maximization problem. The code is inspired by the third lecture on how to #optimize, print and plot. 
+## Data project.
+In this project we investigate the employment rate of the danish population and the subpopulation made up by decendants of non-western immigrants. We further merge in a dataserie describing disposable income.
 
-#From problem set 1 we have inspiration to plot the the optimal labour supply as a function of wage as well as the optimal consumption as a #function of w.
+The data is cleaned and sorted at regional level
 
-#In question 3 we calculate the total tax revenue given the optimal values of labour supply, consumption and uniformly distributed wage #draws.
+Finally we plot the series in interactive plots on. Fro these plots it becomes visible that the employment rates were affected by the financial crisis in 2008, which was also expected.
 
-#Finally we recalculate the total tax revenue given a new value of epsilon.
+## Model project.
+In this project we set up and plot the IS-LM-PC model, which is used instead of the AS-AD model in some newer macro books.
+
+We display how the central bank can adjust the real interest rate to overcome inflation due to a positive output gab.
+
+we introduce a utility function for the Central Bank as we expect the central bank to care not only for the inflation rate but also unemployment. This allows us to solve for the optimal real interest rate when both unemployment and inflation rate is considered by the CB.
+
+From the optimal real interest rate we solve for the optimal level of outpus, inflation rate and unemployment rate. 
+
+Finallly we plot the real interest rate for different values of the inflation target, to graph how that affects the utility.
+

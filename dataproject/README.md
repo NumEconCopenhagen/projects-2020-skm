@@ -1,8 +1,8 @@
 # Data analysis project
 
-Our project is titled Project 2 and is about income and employment.
+Our project is titled Project 2 and is about income and employment where we exploit to employment rates: the employment rate of the total workforce and the employment rate of descendants of non-western immigrants
 
-The **results** of the project can be seen from running Project2.ipynb (dataproject.ipynb).
+The **results** of the project can be seen from running Project2.ipynb 
 
 This **loades two datasets**:
 

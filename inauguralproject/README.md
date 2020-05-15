@@ -10,6 +10,6 @@
 
 #Finally we recalculate the total tax revenue given a new value of epsilon.
 
-The **results** of the project can be seen from running [inauguralproject.ipynb](inauguralproject.ipynb).
+The **results** of the project can be seen from running [inauguralproject copy.ipynb](inauguralproject copy.ipynb).
 
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires no further packages.
